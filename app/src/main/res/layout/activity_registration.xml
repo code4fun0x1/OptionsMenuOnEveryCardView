@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ahdollars.crazyeights.recyclerviewstudentdisplay.RegistrationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="67"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Full Name"
+                android:inputType="textPersonName" />
+
+
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_marginLeft="3dp"
+    android:layout_weight="33"
+    android:layout_width="0dp"
+    android:padding="2px"
+    android:background="@color/highlightColor"
+    android:layout_height="100dp">
+
+    <ImageView
+android:layout_marginLeft="1dp"
+        android:layout_width="match_parent"
+        android:background="@android:drawable/picture_frame"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+
+
+        android:id="@+id/iv_pic" />
+
+
+</LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:textSize="23sp"
+
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="GENDER"
+        android:gravity="center"
+        android:textStyle="bold" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorAccent"/>
+
+    <RadioGroup
+
+
+        android:id="@+id/rg_gender"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+
+            android:checked="false"
+            android:id="@+id/rb_male" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:checked="false"
+            android:id="@+id/rb_female" />
+    </RadioGroup>
+
+
+
+    <TextView
+        android:layout_marginTop="15dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="COURSE"
+        android:textSize="23sp"
+        android:gravity="center"
+        android:textStyle="bold" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorAccent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RadioGroup
+            android:id="@+id/rg_course_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pandora"
+                android:checked="false"
+                android:id="@+id/rb_pandora" />
+
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java"
+                android:checked="false"
+                android:id="@+id/rb_java" />
+
+
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Django"
+                android:checked="false"
+                android:id="@+id/rb_jango" />
+
+        </RadioGroup>
+        <FrameLayout
+            android:layout_width="fill_parent"
+
+            android:layout_height="fill_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginTop="10dp"
+                android:background="#567845"
+                android:text="Register"
+                android:id="@+id/submit"
+                android:layout_gravity="right|bottom" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIEW"
+            android:padding="5dp"
+            android:textSize="25sp"
+            android:background="@color/colorAccent"
+            android:id="@+id/btn_view"
+            android:layout_gravity="center" />
+
+
+
+    </FrameLayout>
+
+</LinearLayout>
